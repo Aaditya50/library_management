@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'librarymanagement.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'djangodb',
+        'USER': 'root',
+        'PASSWORD': '1234',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
@@ -131,5 +135,5 @@ EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'adsj9050@gmail.com'
-EMAIL_HOST_PASSWORD = 'Asj@29102'
+EMAIL_HOST_USER = '*****@gmail.com'  #email 
+EMAIL_HOST_PASSWORD = '******' #password 
